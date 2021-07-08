@@ -1,0 +1,5 @@
+spring:
+  profiles:    active: native
+  cloud:    config:      uri: http://localhost:8080/  #url of your employee cloud config
+      name: application-proxy   # name of file you want to read
+      

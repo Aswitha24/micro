@@ -1,0 +1,1 @@
+server:  port: 9090spring:  application:    name: employee-dash-board          eureka:  client:    register-with-eureka: true    fetch-registry: true    service-url:      defaultZone: http://localhost:1234/eureka      instance:        hostname: localhost 

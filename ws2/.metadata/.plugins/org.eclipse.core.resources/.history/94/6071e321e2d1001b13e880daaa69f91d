@@ -1,0 +1,22 @@
+server:
+  port: 3434
+spring:
+  application:
+    name: employee-proxy
+    
+  
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:1234/eureka
+      instance:
+        hostname: localhost
+zuul:  prefix: /api
+  routes:    hello-abc:
+      path: /proxy/**
+      service-id: CUSTOMER-SERVICE-PROD
+
+ 
